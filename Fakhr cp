@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400&display=swap" rel="stylesheet">
+
+<title>فخر سیپی | فروشگاه رسمی CP</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Vazirmatn', sans-serif;
+    font-weight:400;
+    background:#0f0f0f;
+    color:white;
+}
+
+header{
+    background:#151515;
+    padding:20px;
+    text-align:center;
+    border-bottom:2px solid gold;
+}
+
+.logo{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+header h1{
+    color:gold;
+    font-size:42px;
+    margin:5px 0;
+}
+
+header p{
+    color:#ccc;
+    margin:0;
+}
+
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.card{
+    background:#1b1b1b;
+    width:280px;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 15px rgba(255,215,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card h2{
+    color:gold;
+}
+
+.price{
+    color:#00ff66;
+    font-size:24px;
+    margin:15px 0;
+}
+
+button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-family:'Vazirmatn', sans-serif;
+    font-weight:400;
+    font-size:16px;
+}
+
+button:hover{
+    opacity:0.85;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:2px solid gold;
+    margin-top:30px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="fakhrcp.png" class="logo" alt="logo">
+    <h1>فخر سیپی</h1>
+    <p>فروشگاه رسمی خرید CP کالاف دیوتی موبایل</p>
+</header>
+
+<section class="products">
+
+    <div class="card">
+        <h2>80 CP</h2>
+        <div class="price">209,500 تومان</div>
+        <button onclick="location.href='80cp.html'">خرید</button>
+    </div>
+
+    <div class="card">
+        <h2>420 CP</h2>
+        <div class="price">699,000 تومان</div>
+        <button onclick="location.href='420cp.html'">خرید</button>
+    </div>
+
+    <div class="card">
+        <h2>880 CP</h2>
+        <div class="price">1,250,000 تومان</div>
+        <button onclick="location.href='880cp.html'">خرید</button>
+    </div>
+
+    <div class="card">
+        <h2>1200 CP</h2>
+        <div class="price">— تومان</div>
+        <button onclick="location.href='1200cp.html'">خرید</button>
+    </div>
+
+    <div class="card">
+        <h2>2400 CP</h2>
+        <div class="price">2,850,000 تومان</div>
+        <button onclick="alert('به زودی')">خرید</button>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 | رادمان فخر نیا
+</footer>
+
+</body>
+</html>
