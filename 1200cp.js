@@ -8,7 +8,7 @@ async function sendOrder() {
     cp: 420
   };
 
-  const res = await fetch("YOUR_GOOGLE_SCRIPT_URL", {
+  const res = await fetch("https://script.google.com/macros/s/AKfycbwpjrFwfMJ7eiS8VmqQW9rm-cfjeB7PHBNb-4nQWeruVZMjzzZcLcpxnEUGxAD322D5iQ/exec", {
     method: "POST",
     body: JSON.stringify(data)
   });
