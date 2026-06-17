@@ -1,62 +1,15 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <title>UID User</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
-    .box {
-      text-align: center;
-      background: #1e1e1e;
-      padding: 30px;
-      border-radius: 12px;
-      width: 300px;
-    }
+  var data = JSON.parse(e.postData.contents || "{}");
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin-top: 15px;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      box-sizing: border-box;
-    }
+  sheet.appendRow([
+    data.uid,
+    data.username,
+    data.cp,
+    new Date()
+  ]);
 
-    button {
-      width: 100%;
-      padding: 10px;
-      margin-top: 12px;
-      border: none;
-      border-radius: 8px;
-      background: #00c853;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      box-sizing: border-box;
-    }
-
-    button:hover {
-      background: #00a844;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="box">
-    <h2>UID کاربر</h2>
-    <input type="text" placeholder="UID را وارد کنید">
-    <button onclick="alert('تایید شد!')">تایید</button>
-  </div>
-
-</body>
-</html>
+  return ContentService
+    .createTextOutput("OK");
+}
