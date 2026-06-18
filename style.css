@@ -1,0 +1,38 @@
+body {
+    background: #111;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 280px;
+}
+
+.price {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+button {
+    background: gold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+}
