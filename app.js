@@ -31,5 +31,5 @@ function buy(){
         return;
     }
 
-    window.location.href = "comingsoon.html";
+    window.location.href = "order.html";
 }
