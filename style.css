@@ -1,38 +1,72 @@
 body {
-    background: #111;
-    color: white;
-    font-family: sans-serif;
+    margin: 0;
+    font-family: Vazirmatn, sans-serif;
+    background: #000000;
+    color: #00ff66;
     text-align: center;
+}
+
+/* هدر */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
+    background: #050505;
+    border-bottom: 2px solid #00ff66;
+    box-shadow: 0 0 20px #00ff66;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+h1 {
+    font-size: 24px;
+    color: #00ff66;
+    text-shadow: 0 0 15px #00ff66;
+}
+
+/* کارت‌ها */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .card {
-    background: #1c1c1c;
-    border-radius: 12px;
+    background: #0a0a0a;
     padding: 20px;
-    margin: 20px auto;
-    width: 280px;
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid #00ff66;
+    box-shadow: 0 0 15px #00ff66;
+    transition: 0.3s;
 }
 
-.price {
-    margin: 10px 0;
-    font-size: 20px;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #00ff66;
 }
 
 button {
-    background: gold;
+    margin-top: 10px;
+    padding: 10px 20px;
     border: none;
-    padding: 12px 25px;
-    border-radius: 8px;
+    background: #00ff66;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    box-shadow: 0 0 10px #00ff66;
 }
 
-input {
-    display: block;
-    margin: 10px auto;
-    padding: 12px;
-    width: 250px;
-    border-radius: 8px;
-    border: none;
+button:hover {
+    background: #00cc55;
 }
