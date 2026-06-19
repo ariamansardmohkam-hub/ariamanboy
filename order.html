@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order CP</title>
+
+<link rel="icon" href="favicon.png">
+<meta name="theme-color" content="#00ff99">
+
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:"Vazirmatn",sans-serif;
+    color:#fff;
+    background:
+        radial-gradient(circle at top, rgba(0,255,120,0.08), transparent 40%),
+        radial-gradient(circle at bottom, rgba(255,200,0,0.06), transparent 50%),
+        linear-gradient(135deg, #0a0d0c, #000000);
+}
+
+.container{
+    max-width:500px;
+    margin:40px auto;
+    padding:25px;
+    background:#0b0b0b;
+    border:1px solid #00ff99;
+    border-radius:18px;
+}
+
+h1{
+    text-align:center;
+    color:#00ff99;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    color:#aaa;
+}
+
+.required{color:red;}
+
+input,select{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #00ff99;
+    background:#000;
+    color:#00ff99;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#00ff99;
+    color:#000;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ثبت سفارش CP</h1>
+
+<form onsubmit="submitOrder(event)">
+
+<label>ایمیل بازی *</label>
+<input id="email">
+
+<label>نام در بازی *</label>
+<input id="gameName">
+
+<label>نام و نام خانوادگی *</label>
+<input id="fullName">
+
+<label>شماره موبایل *</label>
+<input id="phone">
+
+<label>نسخه بازی *</label>
+<select id="version">
+<option value="">انتخاب کنید</option>
+<option>WARZONE Mobile</option>
+<option>Call of Duty Mobile</option>
+</select>
+
+<label>نوع اکانت *</label>
+<select id="accountType">
+<option value="">انتخاب کنید</option>
+<option>ACTIVISION</option>
+<option>Facebook</option>
+</select>
+
+<button type="submit">ثبت سفارش</button>
+
+</form>
+
+</div>
+
+<script>
+function submitOrder(e){
+    e.preventDefault();
+
+    let email=document.getElementById("email").value.trim();
+    let gameName=document.getElementById("gameName").value.trim();
+    let fullName=document.getElementById("fullName").value.trim();
+    let phone=document.getElementById("phone").value.trim();
+    let version=document.getElementById("version").value;
+    let accountType=document.getElementById("accountType").value;
+
+    if(!email||!gameName||!fullName||!phone||!version||!accountType){
+        alert("❌ همه فیلدها را کامل پر کن");
+        return;
+    }
+
+    window.location.href="comingsoon.html";
+}
+</script>
+
+</body>
+</html>
