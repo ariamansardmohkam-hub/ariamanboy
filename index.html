@@ -1,52 +1,123 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>Ariaman boy</title>
+  <meta charset="UTF-8">
+  <title>Ariaman Boy</title>
 
-    <style>
-        body {
-            background: #0f0f0f;
-            font-family: sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="Ariamanboy-logo.png">
 
-        h1 {
-            color: white;
-            margin-bottom: 30px;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
 
-        .btn {
-            display: block;
-            width: 220px;
-            padding: 15px;
-            margin: 10px;
-            text-align: center;
-            background: #ffd000;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 10px;
-            transition: 0.2s;
-        }
+    body {
+      background: radial-gradient(circle at top, #1b1b2f, #000);
+      color: white;
+      min-height: 100vh;
+    }
 
-        .btn:hover {
-            background: #ffb800;
-            transform: scale(1.05);
-        }
-    </style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      opacity: 1;
+      color: gold;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      background: linear-gradient(45deg, gold, orange);
+      color: black;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero {
+      height: calc(100vh - 80px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      opacity: 0.7;
+      margin-bottom: 30px;
+    }
+
+    .big-btn {
+      padding: 16px 40px;
+      background: gold;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(255,215,0,0.4);
+    }
+  </style>
 </head>
 
 <body>
 
-    <h1>Ariaman boy</h1>
+  <div class="navbar">
 
-    <a class="btn" href="TGBROBERTS.html">TGB ROBERTS</a>
-    <a class="btn" href="Fakhrcp.html">Fakhr CP</a>
+    <div class="logo">
+      <img src="Ariamanboy-logo.png" alt="logo">
+    </div>
+
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="#">Projects</a>
+      <a class="btn" href="cp.html">ARIS GEM</a>
+    </div>
+
+  </div>
+
+  <div class="hero">
+    <h1>Welcome to Ariaman Boy</h1>
+    <p>Modern Website with cool navigation</p>
+    <a class="big-btn" href="cp.html">Enter ARIS GEM</a>
+  </div>
 
 </body>
 </html>
